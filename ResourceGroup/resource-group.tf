@@ -7,6 +7,7 @@ terraform {
   }
 }
 
+# https://registry.terraform.io/providers/hashicorp/azurerm/
 provider "azurerm" {
   # Configuration options
   features {}
