@@ -2,3 +2,8 @@ ResourceGroup/.terraform
 ResourceGroup/.terraform.lock.hcl
 ResourceGroup/terraform.tfstate
 ResourceGroup/terraform.tfstate.backup
+
+VirtualNetwork/.terraform
+VirtualNetwork/.terraform.lock.hcl
+VirtualNetwork/terraform.tfstate
+VirtualNetwork/terraform.tfstate.backup
