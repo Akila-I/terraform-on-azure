@@ -39,3 +39,17 @@ export ARM_CLIENT_CERTIFICATE_PASSWORD="Pa55w0rd123"
 export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"
 export ARM_TENANT_ID="00000000-0000-0000-0000-000000000000"
 */
+
+
+# https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group
+resource "azurerm_resource_group" "resource-group-1" {
+  name     = "test-resource-group-1-akila"
+  location = "East US 2"
+}
+
+/**
+- SYNTAX OF RESOURCE BLOCK -
+resource "provider_resourceType" "resourceName"{
+    attributes
+}
+*/

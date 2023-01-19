@@ -1,0 +1,4 @@
+ResourceGroup/.terraform
+ResourceGroup/.terraform.lock.hcl
+ResourceGroup/terraform.tfstate
+ResourceGroup/terraform.tfstate.backup
