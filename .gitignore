@@ -12,6 +12,7 @@ Subnets/.terraform
 Subnets/.terraform.lock.hcl
 Subnets/terraform.tfstate
 Subnets/terraform.tfstate.backup
+Subnets/backend-configs
 
 AVSET/.terraform
 AVSET/.terraform.lock.hcl

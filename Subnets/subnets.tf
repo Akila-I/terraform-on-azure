@@ -5,6 +5,18 @@ terraform {
       version = "3.39.1"
     }
   }
+
+# https://developer.hashicorp.com/terraform/language/settings/backends/azurerm
+  backend "azurerm" {
+    # cannot use variables in initializing
+    # resource_group_name  = var.resource_group_name - DOESNT WORK
+    
+    resource_group_name  = "akila_test_rg_2"
+    storage_account_name = "STORAGE_ACCOUNT_NAME"
+    container_name       = "CONTAINER_NAME"
+    key                  = "TFSTATE_FILE"
+  }
+
 }
 
 provider "azurerm" {

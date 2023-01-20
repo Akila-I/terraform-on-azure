@@ -55,3 +55,24 @@ variable "docker_ports" {
   ]
 }
 ```
+
+# Terraform Backend Block for Azure
+
+state files will be stored in the given Azure Storage Account
+```
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "StorageAccount-ResourceGroup"
+    storage_account_name = "abcd1234"
+    container_name       = "tfstate"
+    key                  = "prod.terraform.tfstate"
+  }
+}
+```
+Recommended NOT to hardcode storage account details inside the backend block. Store them in a separate secret file and pass them when running terraform init
+```
+terraform init \
+    -backend-config="address=demo.consul.io" \
+    -backend-config="path=example_app/terraform_state" \
+    -backend-config="scheme=https"
+```
