@@ -12,3 +12,8 @@ Subnets/.terraform
 Subnets/.terraform.lock.hcl
 Subnets/terraform.tfstate
 Subnets/terraform.tfstate.backup
+
+AVSET/.terraform
+AVSET/.terraform.lock.hcl
+AVSET/terraform.tfstate
+AVSET/terraform.tfstate.backup
