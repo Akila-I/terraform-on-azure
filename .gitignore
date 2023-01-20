@@ -1,3 +1,5 @@
+.idea
+
 ResourceGroup/.terraform
 ResourceGroup/.terraform.lock.hcl
 ResourceGroup/terraform.tfstate
