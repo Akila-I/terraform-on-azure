@@ -20,3 +20,8 @@ AVSET/.terraform
 AVSET/.terraform.lock.hcl
 AVSET/terraform.tfstate
 AVSET/terraform.tfstate.backup
+
+NIC/.terraform
+NIC/.terraform.lock.hcl
+NIC/terraform.tfstate
+NIC/terraform.tfstate.backup
