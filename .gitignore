@@ -25,3 +25,8 @@ NIC/.terraform
 NIC/.terraform.lock.hcl
 NIC/terraform.tfstate
 NIC/terraform.tfstate.backup
+
+VirtualMachine/.terraform
+VirtualMachine/.terraform.lock.hcl
+VirtualMachine/terraform.tfstate
+VirtualMachine/terraform.tfstate.backup

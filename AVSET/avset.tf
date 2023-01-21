@@ -5,6 +5,19 @@ terraform {
       version = "3.39.1"
     }
   }
+  backend "azurerm" {
+    # cannot use variables in initializing
+    # resource_group_name  = var.resource_group_name - DOESNT WORK
+
+    resource_group_name  = "RG_NAME"
+    storage_account_name = "SA_NAME"
+    container_name       = "CONT_NAME"
+    key                  = "FILE_NAME"
+  }
+}
+output "AVSET_ID" {
+  description = "Availability set of VM id"
+  value = azurerm_availability_set.test_avset_VM.id
 }
 
 provider "azurerm" {
@@ -44,8 +57,8 @@ resource "azurerm_availability_set" "test_avset_2" {
   platform_fault_domain_count = local.fault_domain
 }
 
-resource "azurerm_availability_set" "test_avset_3" {
-  name                = "akila_test_avset_3"
+resource "azurerm_availability_set" "test_avset_VM" {
+  name                = "AVSET"
 
   # accessing local variables
   location            = local.location
